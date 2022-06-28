@@ -31,4 +31,23 @@ window.addEventListener('DOMContentLoaded', function() {
                 this.classList.toggle('places__heart_active');
             })
         });
+
+
+// переворачивание карточек
+        let card = document.querySelectorAll('.tour__card');
+        card.forEach(function(item){
+            item.addEventListener( 'click', function() {
+
+                this.classList.toggle('is-flipped');
+        });
 });
+});
+
+//slider
+$('.choose__slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    centerMode: true,
+    arrows: false,
+    focusOnSelect: true
+  });
