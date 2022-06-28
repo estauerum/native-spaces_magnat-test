@@ -1,0 +1,213 @@
+.tour {
+    min-height: 775px;
+    background-color: #001420;
+    background-image: url('../icons/tour/black-blue_gradient.png');
+    padding: 96px 0 111px 0;
+    position: relative;
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 154.4%;
+        color: #fff;
+    }
+    &__descr {
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 154.4%;
+        color: #fff;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 53px;
+    }
+
+    &__scene {
+        width: 280px;
+        height: 395px;
+        margin: 40px 0;
+        perspective: 600px;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    &__card {
+        width: 100%;
+        height: 100%;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+        cursor: pointer;
+        position: relative;
+      }
+    &__front {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: #22C56D;
+        border: 1px solid #D2D2D2;
+        border-radius: 20px;
+        cursor: pointer;
+        font-feature-settings: 'zero' on;
+        position: absolute;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        &_green {
+            &::after {
+                position: absolute;
+                font-family: 'Inter';
+                color: #F2F2F2;
+                font-weight: 400;
+                bottom: 26px;
+                right: 21px;
+                content: '0';
+                font-size: 48px;
+                line-height: 58px;
+            }
+            &::before {
+                position: absolute;
+                font-family: 'Inter';
+                color: #F2F2F2;
+                font-weight: 400;
+                top: 26px;
+                left: 21px;
+                content: '0';
+                font-size: 48px;
+                line-height: 58px;
+            }
+        }
+        &_red {
+            background-color: #E22446;
+            &::after {
+                position: absolute;
+                font-family: 'Inter';
+                color: #F2F2F2;
+                font-weight: 400;
+                bottom: 26px;
+                right: 21px;
+                content: '01';
+                font-size: 48px;
+                line-height: 58px;
+            }
+            &::before {
+                position: absolute;
+                font-family: 'Inter';
+                color: #F2F2F2;
+                font-weight: 400;
+                top: 26px;
+                left: 21px;
+                content: '01';
+                font-size: 48px;
+                line-height: 58px;
+            }
+        }
+        &_orange {
+            background-color: #FF7844;
+            &::after {
+                position: absolute;
+                font-family: 'Inter';
+                color: #F2F2F2;
+                font-weight: 400;
+                bottom: 26px;
+                right: 21px;
+                content: '02';
+                font-size: 48px;
+                line-height: 58px;
+            }
+            &::before {
+                position: absolute;
+                font-family: 'Inter';
+                color: #F2F2F2;
+                font-weight: 400;
+                top: 26px;
+                left: 21px;
+                content: '02';
+                font-size: 48px;
+                line-height: 58px;
+            }
+        }
+        &_viol {
+            background-color: #7B61FF;
+            &::after {
+                position: absolute;
+                font-family: 'Inter';
+                color: #F2F2F2;
+                font-weight: 400;
+                bottom: 26px;
+                right: 21px;
+                content: '03';
+                font-size: 48px;
+                line-height: 58px;
+            }
+            &::before {
+                position: absolute;
+                font-family: 'Inter';
+                color: #F2F2F2;
+                font-weight: 400;
+                top: 26px;
+                left: 21px;
+                content: '03';
+                font-size: 48px;
+                line-height: 58px;
+            }
+        }
+    }
+    &__text {
+        font-family: 'Inter';
+        color: #F2F2F2;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 116px;
+        font-feature-settings: 'zero' on;
+    }
+
+    &__face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #D2D2D2;
+        border-radius: 20px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        text-align: center;
+        background: #22C56D;
+        cursor: pointer;
+        &_red {
+            background-color: #E22446;
+        }
+        &_orange {
+            background-color: #FF7844;
+        }
+        &_viol {
+            background-color: #7B61FF;
+        }
+        img {
+            margin-top: 10px;
+            width: 100%;
+        }
+        &_back {
+            transform: rotateY(180deg);
+          }
+    }
+
+    &__eclipse {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+  
+  .tour__card.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+
+  
+  
+
+  

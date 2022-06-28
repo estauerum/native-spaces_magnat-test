@@ -1,0 +1,89 @@
+.places {
+    min-height: 1102px;
+    padding: 96px 0;
+    background-color: #EFF1F4;
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 154.4%;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 8px;
+    }
+    &__item {
+        position: relative;
+        width: 312px;
+        height: 335px;
+        background-color: #fff;
+        margin-top: 24px;
+        border-radius: 16px;
+    }
+    &__wrap {
+        margin-top: 24px;
+        padding: 0 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        border-radius: 8px;
+    }
+    &__city {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #9EA6B6;
+        margin-left: 24px;
+        margin-top: 8px;
+        &::after {
+            content:url('../icons/places/tag.svg');
+            margin-left: 10px;
+        }
+    }
+    &__view {
+        cursor: pointer;
+        position: absolute;
+        top: 23px;
+        left: 25px;
+        text-align: center;
+        line-height: 170%;
+        background-color: #22C56D;
+        border-radius: 8px;
+        width: 56px;
+        height: 32px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
+        &_360 {
+            background-color: #FF7844;
+        }
+        &_video {
+            width: 75px;
+            background-color: #40B3E0;
+        }
+    }
+    &__heart {
+        cursor: pointer;
+        stroke: #9EA6B6;
+        &_active {
+            stroke: #FF0000;
+            fill: #FF0000;
+        }
+    }
+
+    &__btn {
+        margin-top: 72px;
+        width: 1320px;
+        height: 56px;
+        background-color: #005399;
+        border-radius: 16px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        color: #fff;
+        border: none;
+    }
+}
